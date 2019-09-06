@@ -1,0 +1,24 @@
+{
+  "name": "w3c-check",
+  "version": "1.0.0",
+  "description": "W3C check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:W3C-check": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 site-validator",
+    "test:W3C-check-local": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 site-validator https://www.regiomakelaer.nl/sitemap.xml --verbose --local --quiet --view W3C-report.json"
+  },
+  "devDependencies": {
+    "site-validator-cli": "~1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostdetester/W3C-check.git"
+  },
+  "author": "Joost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joostdetester/W3C-check/issues"
+  },
+  "homepage": "https://github.com/joostdetester/W3C-check#readme"
+}
